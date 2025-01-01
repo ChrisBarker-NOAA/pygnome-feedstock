@@ -92,9 +92,8 @@ test:
     - pytest --version
     - echo "running pytest from:"
     - pwd
-    - ls ./
-    - ls test_weatherers
-    - pytest ./unit_tests
+    - ls unit_tests
+    - pytest unit_tests
 
 about:
   home: https://github.com/NOAA-ORR-ERD/PyGnome
