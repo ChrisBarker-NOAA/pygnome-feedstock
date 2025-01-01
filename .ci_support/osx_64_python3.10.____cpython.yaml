@@ -59,3 +59,11 @@ zlib:
 - '1'
 zstd:
 - '1.5'
+
+CONDA_BUILD_SYSROOT:
+- /Users/chris.barker/Hazmat/CondaForge/pygnome-feedstock/SDKs/MacOSX10.13.sdk
+
+
+CONDA_BUILD_SYSROOT:
+- /Users/chris.barker/Hazmat/CondaForge/pygnome-feedstock/SDKs/MacOSX10.13.sdk
+
