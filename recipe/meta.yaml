@@ -10,7 +10,7 @@ source:
   sha256: 77e07b73fd39ab5c0f913b572db90ee6f59bc335712424cfa3923806be14227d
 
 build:
-  skip: True  # [py<39 or py>312]
+  skip: True  # [py<310 or py>312]
   missing_dso_whitelist:
     - "*/lib_gnome.dll"         # [win]
     - "*/point_in_polygon.dll"  # [win]
@@ -54,7 +54,7 @@ requirements:
     - zlib
     - zstd
   run:
-    - python >=3.10
+    - python
     - awesome-slugify
     - progressbar
     - numpy >=1.24
@@ -88,12 +88,12 @@ test:
     - gnome
   commands:
     - python -c "import gnome; assert gnome.__version__ == '{{ version }}'"
-    - cd py_gnome/tests
+    - cd py_gnome/tests/unit_tests
     - pytest --version
     - echo "running pytest from:"
     - pwd
-    - ls unit_tests
-    - pytest unit_tests
+    - ls ./
+    - pytest ./
 
 about:
   home: https://github.com/NOAA-ORR-ERD/PyGnome
