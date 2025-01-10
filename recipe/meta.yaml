@@ -10,7 +10,7 @@ source:
   sha256: 77e07b73fd39ab5c0f913b572db90ee6f59bc335712424cfa3923806be14227d
 
 build:
-  skip: True  # [py<310 or py>312]
+  skip: True  # [py<39 or py>312]
   missing_dso_whitelist:
     - "*/lib_gnome.dll"         # [win]
     - "*/point_in_polygon.dll"  # [win]
@@ -69,7 +69,7 @@ requirements:
     - pyogrio
     - pyproj
     - shapely >=2.0.6
-    - gridded >=0.6.10
+    - gridded <0.7
     - pynucos >=3.3.0
     - cell_tree2d
     - py_gd >=2.3
