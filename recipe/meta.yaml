@@ -69,7 +69,7 @@ requirements:
     - pyogrio
     - pyproj
     - shapely >=2.0.6
-    - gridded >= 0.7.1
+    - gridded >=0.7.1
     - pynucos >=3.4.0
     - cell_tree2d
     - py_gd >=2.3
