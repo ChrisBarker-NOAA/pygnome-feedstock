@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/NOAA-ORR-ERD/PyGnome/archive/v{{ version }}.tar.gz
-  sha256: 77e07b73fd39ab5c0f913b572db90ee6f59bc335712424cfa3923806be14227d
+  sha256: f63f06496c9e349ede43c9b53c2f1fb603af8765739fb84bdefb10d0ce08f010
 
 build:
   skip: True  # [py<39 or py>312]
