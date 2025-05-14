@@ -89,6 +89,9 @@ test:
   commands:
     - python -c "import gnome; assert gnome.__version__ == '{{ version }}'"
     - cd py_gnome/tests/unit_tests
+    # this test to exercise a paricular bug -- seg faulting in the test environment
+    - pytest test_cy/test_cy_shio_time.py
+    # only if that doesn't segfault -- run the rest.
     - pytest ./
 
 about:
