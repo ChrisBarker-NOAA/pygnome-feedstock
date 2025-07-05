@@ -10,7 +10,7 @@ source:
   sha256: f63f06496c9e349ede43c9b53c2f1fb603af8765739fb84bdefb10d0ce08f010
 
 build:
-  skip: True  # [py<39 or py>312]
+  skip: True  # [py<39 or py>=312]
   missing_dso_whitelist:
     - "*/lib_gnome.dll"         # [win]
     - "*/point_in_polygon.dll"  # [win]
@@ -90,9 +90,7 @@ test:
   commands:
     - python -c "import gnome; assert gnome.__version__ == '{{ version }}'"
     # - cd py_gnome/tests/unit_tests
-    # # this test to exercise a particular bug -- seg faulting in the test environment
-    # # - pytest test_cy/test_cy_shio_time.py
-    # # these are segfaulting, but not outside conda-build -- weird!
+    # # these, and more :-(,  are segfaulting, but not outside conda-build -- weird!
     # # but until we figure it out -- just remove it, but run the rest
     # - rm test_cy/test_cy_shio_time.py
     # - rm test_cy/test_cy_cats_mover.py  # this calls cy_shio_time
