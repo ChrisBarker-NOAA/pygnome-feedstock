@@ -1,5 +1,5 @@
 {% set name = "pygnome" %}
-{% set version = "1.1.16" %}
+{% set version = "1.1.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,9 @@ package:
 
 source:
   url: https://github.com/NOAA-ORR-ERD/PyGnome/archive/v{{ version }}.tar.gz
-  sha256: f63f06496c9e349ede43c9b53c2f1fb603af8765739fb84bdefb10d0ce08f010
-
+  sha256: 3a7d1be5ea482ea8da4f713ea276a2dee6ba920bd3c3abb6120bc98c6421b485
 build:
-  skip: True  # [py<310 or py>=312]
+#   skip: True  # [py<310 or py>=314]
   missing_dso_whitelist:
     - "*/lib_gnome.dll"         # [win]
     - "*/point_in_polygon.dll"  # [win]
