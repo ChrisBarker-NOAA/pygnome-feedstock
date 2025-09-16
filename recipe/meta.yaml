@@ -80,7 +80,7 @@ test:
     - pytest-timeout
     - testfixtures
   # we really should be able to run the tests, but mysterious segfaults are killing us.
-  # source_files:
+  source_files:
   #   # can't find a single glob to get all files and dirs recursively!
     - py_gnome/tests/unit_tests/**/*
     - py_gnome/tests/unit_tests/*
