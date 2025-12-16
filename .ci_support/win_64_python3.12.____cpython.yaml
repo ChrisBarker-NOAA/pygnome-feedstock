@@ -1,7 +1,7 @@
 bzip2:
 - '1'
 c_compiler:
-- vs2022
+- vs2019
 c_stdlib:
 - vs
 channel_sources:
@@ -11,7 +11,7 @@ channel_targets:
 curl:
 - '8'
 cxx_compiler:
-- vs2022
+- vs2019
 hdf4:
 - 4.2.15
 hdf5:
