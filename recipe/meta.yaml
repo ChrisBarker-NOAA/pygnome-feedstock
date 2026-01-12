@@ -30,7 +30,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
-    - libcxx-devel <19  # [osx]
+    - libcxx-devel # [osx]
     - ninja
     - cmake
     - make
