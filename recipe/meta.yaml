@@ -75,11 +75,6 @@ requirements:
     - py_gd >=2.3.3
     - adios_db >=1.2.7
 test:
-  imports:
-    - gnome
-  commands:
-    - python -c "import gnome; assert gnome.__version__ == '{{ version }}'"
-test:
   requires:
     - pytest
     - pytest-cov
@@ -100,12 +95,6 @@ test:
      # - rm test_cy/test_cy_shio_time.py
      # - rm test_cy/test_cy_cats_mover.py  # this calls cy_shio_time
      - pytest ./
-
-
-
-
-
-
 
 about:
   home: https://github.com/NOAA-ORR-ERD/PyGnome
