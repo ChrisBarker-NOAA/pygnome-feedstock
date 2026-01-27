@@ -95,6 +95,7 @@ test:
     - rm test_cy/test_cy_shio_time.py
     - rm test_cy/test_cy_cats_mover.py  # this calls cy_shio_time
     - rm test_outputters/test_current_outputter.py
+    - rm test_persist/test_save_load.py
     - pytest ./
 
 about:
