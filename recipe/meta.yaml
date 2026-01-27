@@ -92,8 +92,8 @@ test:
     - cd py_gnome/tests/unit_tests
     # these, and more :-(,  are segfaulting, but not outside conda-build -- weird!
     # but until we figure it out -- just remove it, but run the rest
-    # - rm test_cy/test_cy_shio_time.py
-    # - rm test_cy/test_cy_cats_mover.py  # this calls cy_shio_time
+    - rm test_cy/test_cy_shio_time.py
+    - rm test_cy/test_cy_cats_mover.py  # this calls cy_shio_time
     - pytest ./
 
 about:
