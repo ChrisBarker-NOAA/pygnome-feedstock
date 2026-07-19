@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pygnome
-  version: "1.1.23"
+  version: "1.1.24"
 
 package:
   name: ${{ name|lower }}
@@ -13,8 +13,8 @@ source:
   sha256: 6c5f2bd96d4c84e014b5e8db33940d9d885aa5b64d35496d3bf72b637f1b6541
 
 build:
-  number: 2
-  skip: match(python, "<3.9") or match(python, ">3.13")
+  number: 0
+  skip: match(python, "<3.12") or match(python, ">3.13")
   script:
     - if: unix
       then: export CMAKE_GENERATOR=Ninja
