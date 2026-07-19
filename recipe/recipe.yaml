@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/NOAA-ORR-ERD/PyGnome/archive/v${{ version }}.tar.gz
-  sha256: 6c5f2bd96d4c84e014b5e8db33940d9d885aa5b64d35496d3bf72b637f1b6541
+  sha256: 828dedce9a61b6999ca57d65bf0e1e26289008f9d0c804c49131ae3479730ed5
 
 build:
   number: 0
